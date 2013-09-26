@@ -24,4 +24,4 @@ script: mvn test
 
 notifications:
   email:
-      - vn_free_market@ml.mulodo.com
+      - vu.son@mulodo.com
