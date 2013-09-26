@@ -2,16 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.mulodo.freemarket</groupId>
-	<artifactId>com.mulodo.freemarket</artifactId>
+	<groupId>mulodo.com.travisrobotium</groupId>
+	<artifactId>mulodo.com.travisrobotium</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>FreeMarket</name>
+	<name>TravisRobotium</name>
 	<packaging>apk</packaging>
 	<url>http://maven.apache.org</url>
         
         <parent>
-		<artifactId>freemarket</artifactId>
-		<groupId>com.mulodo.freemarket</groupId>
+		<artifactId>travisrobotium</artifactId>
+		<groupId>mulodo.com.travisrobotium</groupId>
 		<version>1.0</version>
 	</parent>
 
@@ -44,15 +44,10 @@
 	    <resources>
 	        <resource>
 	            <directory>src</directory>
-	            <targetPath>com/mulodo/freemarket</targetPath>
+	            <targetPath>mulodo/com/travisrobotium</targetPath>
 	        </resource>
 	    </resources>
-	    <testResources>
-	        <testResource>
-	            <directory>src</directory>
-	            <targetPath>com/mulodo/test</targetPath>
-	        </testResource>
-	    </testResources>
+	    
 	    <finalName>${project.artifactId}</finalName>
 	    <plugins>
 	        <plugin>
