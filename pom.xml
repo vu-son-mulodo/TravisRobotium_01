@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.mulodo.freemarket</groupId>
-	<artifactId>freemarket</artifactId>
+	<groupId>mulodo.com.travisrobotium</groupId>
+	<artifactId>travisrobotium</artifactId>
 	<version>1.0</version>
 	<packaging>pom</packaging>
 
-	<name>freemarket</name>
+	<name>travisrobotium</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -15,7 +15,7 @@
 	</properties>
 
 	<modules>
-		<module>FreeMarket</module>
-		<module>unittest-test</module>
+		<module>TravisRobotium</module>
+		<module>TestTravisRobotium</module>
 	</modules>
 </project>
