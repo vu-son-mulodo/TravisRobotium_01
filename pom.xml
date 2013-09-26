@@ -25,16 +25,24 @@
 			<artifactId>robotium-solo</artifactId>
 			<version>4.0</version>
 		</dependency>
-            <dependency>
-                <groupId>com.google.android</groupId>
-                <artifactId>android</artifactId>
-                <version>1.6_r2</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.android</groupId>
-                <artifactId>android-test</artifactId>
-                <version>1.6_r2</version>
-            </dependency>
+        <dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<version>${platform.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android-test</artifactId>
+			<version>${platform.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+     <groupId>junit</groupId>
+     <artifactId>junit</artifactId>
+     <version>4.8.2</version>
+     <scope>compile</scope>
+</dependency>
         </dependencies>
     </dependencyManagement>
     
