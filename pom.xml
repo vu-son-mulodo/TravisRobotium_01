@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <version>1.0</version>
-    <groupId>com.f2prateek.foodbot</groupId>
-    <artifactId>com-f2prateek-foodbot-parent</artifactId>
-    <name>FoodBot parent</name>
+    <groupId>mulodo.com.travisrobotium</groupId>
+    <artifactId>mulodo.com.travisrobotium</artifactId>
+    <name>Travis Robotium</name>
     <packaging>pom</packaging>
 
   
@@ -25,9 +25,9 @@
     <developers>
         <developer>
             <email>vu.son@mulodo.com</email>
-            <name>Prateek Srivastava</name>
-            <url>https://github.com/f2prateek</url>
-            <id>f2prateek</id>
+            <name>Vu Hung Son</name>
+            <url>https://github.com/vu-son-mulodo</url>
+            <id>vu-son-mulodo</id>
         </developer>
     </developers>
 

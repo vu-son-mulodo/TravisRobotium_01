@@ -20,14 +20,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>com-f2prateek-foodbot-integration-tests</artifactId>
-    <name>FoodBot integration tests</name>
+    <artifactId>mulodo.com.travisrobotium.test</artifactId>
+    <name>Test Travis Robotium</name>
     <packaging>apk</packaging>
 
     <parent>
         <version>1.0</version>
-        <groupId>com.f2prateek.foodbot</groupId>
-        <artifactId>com-f2prateek-foodbot-parent</artifactId>
+        <groupId>mulodo.com.travisrobotium</groupId>
+        <artifactId>mulodo.com.travisrobotium</artifactId>
     </parent>
 
     <dependencies>
@@ -44,15 +44,15 @@
             <version>${android.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.f2prateek.foodbot</groupId>
-            <artifactId>com-f2prateek-foodbot</artifactId>
+            <groupId>mulodo.com.travisrobotium</groupId>
+            <artifactId>mulodo.com.travisrobotium</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
             <type>apk</type>
         </dependency>
         <dependency>
-            <groupId>com.f2prateek.foodbot</groupId>
-            <artifactId>com-f2prateek-foodbot</artifactId>
+            <groupId>mulodo.com.travisrobotium</groupId>
+            <artifactId>mulodo.com.travisrobotium</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
             <type>jar</type>
