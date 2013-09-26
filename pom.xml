@@ -1,71 +1,82 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+<?xml version="1.0" encoding="UTF-8"?>
 
-	<groupId>mulodo.com.travisrobotium</groupId>
-	<artifactId>travisrobotium</artifactId>
-	<version>1.0</version>
-	<packaging>pom</packaging>
 
-	<name>travisrobotium</name>
-	<url>http://maven.apache.org</url>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
+    <version>1.0</version>
+    <groupId>com.f2prateek.foodbot</groupId>
+    <artifactId>com-f2prateek-foodbot-parent</artifactId>
+    <name>FoodBot parent</name>
+    <packaging>pom</packaging>
 
-	<modules>
-		<module>TravisRobotium</module>
-		<module>TestTravisRobotium</module>
-	</modules>
-	<dependencyManagement>
-        <dependencies>
-            <dependency>
-			<groupId>com.jayway.android.robotium</groupId>
-			<artifactId>robotium-solo</artifactId>
-			<version>4.0</version>
-		</dependency>
-        <dependency>
-			<groupId>com.google.android</groupId>
-			<artifactId>android</artifactId>
-			<version>${platform.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.google.android</groupId>
-			<artifactId>android-test</artifactId>
-			<version>${platform.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-     <groupId>junit</groupId>
-     <artifactId>junit</artifactId>
-     <version>4.8.2</version>
-     <scope>compile</scope>
-</dependency>
-        </dependencies>
-    </dependencyManagement>
-    
+  
+
+    <licenses>
+        <license>
+            <name>Apache License Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+   
+
+    <developers>
+        <developer>
+            <email>vu.son@mulodo.com</email>
+            <name>Prateek Srivastava</name>
+            <url>https://github.com/f2prateek</url>
+            <id>f2prateek</id>
+        </developer>
+    </developers>
+
+    <modules>
+        <module>TravisRobotium</module>
+        <module>TestTravisRobotium</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <android.version>4.1.1.4</android.version>
+    </properties>
     <build>
         <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                     <artifactId>android-maven-plugin</artifactId>
-                    <version>3.0.0-alpha-13</version>
+                    <version>3.4.0</version>
                     <extensions>true</extensions>
                     <configuration>
                         <sdk>
-                            <platform>4</platform>
+                            <platform>16</platform>
                         </sdk>
-                        <undeployBeforeDeploy>true</undeployBeforeDeploy>
+                        <!--<undeployBeforeDeploy>true</undeployBeforeDeploy>-->
+                        <proguard>
+                            <skip>true</skip>
+                            <config>../proguard.cfg</config>
+                        </proguard>
                     </configuration>
                 </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>2.3.2</version>
-                </plugin>
+		<plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-checkstyle-plugin</artifactId>
+          <version>2.9.1</version>
+          <configuration>
+            <failsOnError>true</failsOnError>
+            <configLocation>../checkstyle.xml</configLocation>
+            <consoleOutput>true</consoleOutput>
+          </configuration>
+          <executions>
+            <execution>
+              <phase>verify</phase>
+              <goals>
+                <goal>checkstyle</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
             </plugins>
         </pluginManagement>
     </build>
