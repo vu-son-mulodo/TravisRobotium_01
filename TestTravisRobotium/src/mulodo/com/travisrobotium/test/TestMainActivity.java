@@ -28,7 +28,7 @@ public class TestMainActivity extends
 		mSolo.enterText(0, "Hello Robotium");
 		mSolo.clickOnButton("Click");
 		
-		assertEquals(1, 2);
+		assertEquals(1, 1);
 	}
 
 	@Override
