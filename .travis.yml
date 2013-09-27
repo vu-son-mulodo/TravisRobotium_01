@@ -35,8 +35,4 @@ before_install:
 before_script:
   - ./wait_for_emulator
 
-script: mvn test
-
-notifications:
-  email:
-      - vu.son@mulodo.com
+script: mvn install -Pintegration-tests -Dandroid.device=test
