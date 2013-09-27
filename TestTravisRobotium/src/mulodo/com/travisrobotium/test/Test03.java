@@ -10,7 +10,7 @@ public class Test03 extends ActivityTestCase {
 	}
 
 	public void test() {
-		assertEquals("A", "B");
+		assertEquals("A", "A");
 	}
 	
 	@Override

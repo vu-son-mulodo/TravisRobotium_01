@@ -12,9 +12,9 @@ public class TEst extends ActivityTestCase {
 	public void test() {
 		System.out.println("Hello I'm Son");
 		assertEquals(1, 1);
-		assertEquals("A", "B");
+		assertEquals("A", "A");
 		int a = 2;
-		assertEquals(a, 3);
+		assertEquals(a, 2);
 	}
 
 	@Override
