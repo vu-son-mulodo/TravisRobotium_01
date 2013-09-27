@@ -52,13 +52,6 @@
             <artifactId>robotium-solo</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
-            <type>apk</type>
-        </dependency>
-        <dependency>
-            <groupId>com.jayway.android.robotium</groupId>
-            <artifactId>robotium-solo</artifactId>
-            <version>${project.version}</version>
-            <scope>provided</scope>
             <type>jar</type>
         </dependency>
         <dependency>
