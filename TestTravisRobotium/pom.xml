@@ -1,33 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-<!--
-  ~ Copyright 2013 Prateek Srivastava (@f2prateek)
-  ~
-  ~ Licensed under the Apache License, Version 2.0 (the "License");
-  ~ you may not use this file except in compliance with the License.
-  ~ You may obtain a copy of the License at
-  ~
-  ~ 	http://www.apache.org/licenses/LICENSE-2.0
-  ~
-  ~ Unless required by applicable law or agreed to in writing, software
-  ~ distributed under the License is distributed on an "AS IS" BASIS,
-  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~ See the License for the specific language governing permissions and
-  ~ limitations under the License.
-  -->
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mulodo.com.travisrobotium.test</artifactId>
-    <name>Test Travis Robotium</name>
+    <artifactId>com-cmput301-recipebot-integration-tests</artifactId>
+    <name>RecipeBot integration tests</name>
     <packaging>apk</packaging>
 
     <parent>
         <version>1.0</version>
-        <groupId>travisrobotium-gr-id</groupId>
-        <artifactId>travisrobotium-art-id</artifactId>
+        <groupId>com.cmput301.recipebot</groupId>
+        <artifactId>com-cmput301-recipebot-parent</artifactId>
     </parent>
 
     <dependencies>
@@ -44,23 +29,23 @@
             <version>${android.version}</version>
         </dependency>
         <dependency>
-            <groupId>mulodo.com.travisrobotium</groupId>
-            <artifactId>mulodo.com.travisrobotium</artifactId>
+            <groupId>com.cmput301.recipebot</groupId>
+            <artifactId>com-cmput301-recipebot</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
             <type>apk</type>
         </dependency>
         <dependency>
-            <groupId>mulodo.com.travisrobotium</groupId>
-            <artifactId>mulodo.com.travisrobotium</artifactId>
+            <groupId>com.cmput301.recipebot</groupId>
+            <artifactId>com-cmput301-recipebot</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
             <type>jar</type>
         </dependency>
         <dependency>
-            <groupId>com.jayway.android.robotium</groupId>
-            <artifactId>robotium-solo</artifactId>
-            <version>4.0</version>
+            <groupId>com.squareup.spoon</groupId>
+            <artifactId>spoon-client</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
     <build>
