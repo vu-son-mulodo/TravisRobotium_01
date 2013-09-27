@@ -80,6 +80,11 @@
             <version>1.9.5</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.jayway.android.robotium</groupId>
+            <artifactId>robotium-solo</artifactId>
+            <version>4.0</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
