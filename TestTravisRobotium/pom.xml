@@ -26,8 +26,8 @@
 
     <parent>
         <version>1.0</version>
-        <groupId>mulodo.com.travisrobotium</groupId>
-        <artifactId>mulodo.com.travisrobotium</artifactId>
+        <groupId>travisrobotium-gr-id</groupId>
+        <artifactId>travisrobotium-art-id</artifactId>
     </parent>
 
     <dependencies>
