@@ -29,23 +29,9 @@
             <version>${android.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.cmput301.recipebot</groupId>
-            <artifactId>com-cmput301-recipebot</artifactId>
-            <version>${project.version}</version>
-            <scope>provided</scope>
-            <type>apk</type>
-        </dependency>
-        <dependency>
-            <groupId>com.cmput301.recipebot</groupId>
-            <artifactId>com-cmput301-recipebot</artifactId>
-            <version>${project.version}</version>
-            <scope>provided</scope>
-            <type>jar</type>
-        </dependency>
-        <dependency>
-            <groupId>com.squareup.spoon</groupId>
-            <artifactId>spoon-client</artifactId>
-            <version>1.0.0</version>
+            <groupId>com.jayway.android.robotium</groupId>
+            <artifactId>robotium-solo</artifactId>
+            <version>4.0</version>
         </dependency>
     </dependencies>
     <build>
